@@ -1,0 +1,6 @@
+export { default as LandingSection } from '@/views/home/LandingSection.vue'
+export { default as StepsSection } from '@/views/home/StepsSection.vue'
+export { default as FeaturesSection } from '@/views/home/FeaturesSection.vue'
+export { default as StatisticsSection } from '@/views/home/StatisticsSection.vue'
+export { default as TestimonialsSection } from '@/views/home/TestimonialsSection.vue'
+export { default as JoiningSection } from '@/views/home/JoiningSection.vue'
