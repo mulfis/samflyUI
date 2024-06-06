@@ -5,7 +5,7 @@ import { ButtonPrimary } from '@/components/buttons'
 
 <template>
   <header>
-    <nav class="flex py-4 px-10 md:px-36 m-auto justify-between w-full bg-white fixed right-0 top-0">    
+    <nav class="flex py-3 px-10 md:px-36 m-auto justify-between w-full bg-white fixed right-0 top-0">    
       <div class="flex m-1">
         <a href="#">
           <img :src="Logo" width="160" alt="logo">
