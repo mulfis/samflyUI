@@ -7,7 +7,7 @@ import { SamSquare } from '@/assets/img'
     <article class="flex justify-between">
       <div class="flex flex-col m-auto items-center justify-center w-1/2">
         <div class="mb-8">
-          <h1 class="font-bold text-3xl text-teal-950">Boost your workflow with FireflyUI</h1>
+          <h1 class="font-bold text-3xl text-teal-950">Boost your workflow with SamflyUI</h1>
           <p class="font-normal text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam accusamus iste possimus qui.</p>
         </div>
         <div class="grid grid-cols-2 grid-rows-2 gap-6">
