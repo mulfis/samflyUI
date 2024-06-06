@@ -1152,4 +1152,20 @@ video {
   .\32xl\:pt-\[17rem\] {
     padding-top: 17rem;
   }
+
+  .\32xl\:pt-\[16rem\] {
+    padding-top: 16rem;
+  }
+
+  .\32xl\:pt-\[14rem\] {
+    padding-top: 14rem;
+  }
+
+  .\32xl\:pt-\[13rem\] {
+    padding-top: 13rem;
+  }
+
+  .\32xl\:pt-\[12rem\] {
+    padding-top: 12rem;
+  }
 }

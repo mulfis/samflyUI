@@ -5,7 +5,7 @@ import { Sam } from '@/assets/img'
 </script>
 
 <template>
-  <section class="bg-white flex m-auto justify-around h-full pt-28 2xl:pt-[17rem]" name="landing" id="landing">
+  <section class="bg-white flex m-auto justify-around h-full pt-28 2xl:pt-[12rem]" name="landing" id="landing">
     <div class="m-auto mr-10 pr-10 w-1/2">
       <div class="p-2 flex">
         <Fire class="mr-2" fill="#14b8a6" width="25" height="25" />
