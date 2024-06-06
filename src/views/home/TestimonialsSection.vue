@@ -1,6 +1,6 @@
-<style>
-
-</style>
+<script setup lang="js">
+import { Trailblazer, Clara } from '@/assets/img'
+</script>
 
 <template>
   <section class="container bg-white flex flex-col items-center justify-center pt-28 2xl:pt-[15rem] px-10 w-full" name="testimonials" id="testimonials">
@@ -16,7 +16,7 @@
           </p>
         </div>
         <div class="flex flex-col items-center">
-          <img class="h-10 w-10 rounded-full m-2" src="@/assets/img/trailblazer.png" alt="">
+          <img class="h-10 w-10 rounded-full m-2" :src="Trailblazer" alt="Trailblazer Profile">
           <p class="font-bold text-teal-950 text-lg">Trailblazer</p>
           <p class="font-semibold text-sm text-gray-500">Main Character</p>
         </div>
@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="flex flex-col items-center">
-          <img class="h-10 w-10 rounded-full m-2" src="@/assets/img/clara.png" alt="">
+          <img class="h-10 w-10 rounded-full m-2" :src="Clara" alt="Clara Profile">
           <p class="font-bold text-teal-950 text-lg">Clara</p>
           <p class="font-semibold text-sm text-gray-500">SSR Belobog Character</p>
         </div>
