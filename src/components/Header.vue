@@ -1,6 +1,26 @@
 <script setup lang="js">
 import { Logo } from '@/assets/logo'
 import { ButtonPrimary } from '@/components/buttons'
+import { Navigation } from '@/components'
+
+const navigations = [
+  {
+    loc: '#landing',
+    name: 'Product',
+  },
+  {
+    loc: '#steps',
+    name: 'Steps',
+  },
+  {
+    loc: '#features',
+    name: 'Features',
+  },
+  {
+    loc: '#statistics',
+    name: 'Achievement',
+  },
+]
 </script>
 
 <template>
@@ -12,10 +32,11 @@ import { ButtonPrimary } from '@/components/buttons'
         </a>
       </div>
       <div class="flex justify-between">
-        <a href="#landing" class="m-1 p-2 font-medium text-gray-600">Product</a>
-        <a href="#steps" class="m-1 p-2 font-medium text-gray-600">Steps</a>
-        <a href="#features" class="m-1 p-2 font-medium text-gray-600">Features</a>
-        <a href="#statistics" class="m-1 p-2 font-medium text-gray-600">Achievements</a>
+        <Navigation
+          v-for="navigate in navigations"
+          :loc="navigate.loc"
+          :name="navigate.name"
+        />
       </div>
       <div>
         <ButtonPrimary text="Login" type="outline" />

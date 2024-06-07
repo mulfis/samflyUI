@@ -1,5 +1,22 @@
 <script setup lang="js">
 import { Trailblazer, Clara } from '@/assets/img'
+import { Testimonial } from '@/components'
+
+const testimonials = [
+  {
+    name: 'Trailblazer',
+    job: 'Main Character',
+    image: Trailblazer,
+    desc: '“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming."',
+  },
+  {
+    name: 'Clara',
+    job: 'Belobog SSR Character',
+    image: Clara,
+    desc: '“A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming."',
+  },
+]
+
 </script>
 
 <template>
@@ -8,31 +25,14 @@ import { Trailblazer, Clara } from '@/assets/img'
       <h1 class="font-bold text-teal-950 text-3xl mb-2">Customer Testimonials</h1>
       <p class="font-medium text-gray-500">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
     </div>
-    <div class="flex justify-around items-center">
-      <article class="flex flex-col text-center p-6 m-2 bg-slate-100 rounded-xl">
-        <div class="my-6">
-          <p class="font-semibold">
-            “A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming."
-          </p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img class="h-10 w-10 rounded-full m-2" :src="Trailblazer" alt="Trailblazer Profile">
-          <p class="font-bold text-teal-950 text-lg">Trailblazer</p>
-          <p class="font-semibold text-sm text-gray-500">Main Character</p>
-        </div>
-      </article>
-      <article class="flex flex-col text-center p-6 m-2 bg-slate-100 rounded-xl">
-        <div class="my-6">
-          <p class="font-semibold">
-            “A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming."
-          </p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img class="h-10 w-10 rounded-full m-2" :src="Clara" alt="Clara Profile">
-          <p class="font-bold text-teal-950 text-lg">Clara</p>
-          <p class="font-semibold text-sm text-gray-500">SSR Belobog Character</p>
-        </div>
-      </article>
+    <div class="grid grid-cols-2 gap-x-5">
+      <Testimonial 
+        v-for="testimonial in testimonials"
+        :desc="testimonial.desc"
+        :image="testimonial.image"
+        :name="testimonial.name"
+        :job="testimonial.job"
+      />
     </div>
   </section>
 </template>
